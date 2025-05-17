@@ -64,8 +64,8 @@ class TacticalReferenceDocument(SimpleDocTemplate):
             style = flowable.style.name
             if style == 'Heading1':
                 self.notify('TOCEntry', (0, text, self.page))
-            elif style == 'Heading2':
-                self.notify('TOCEntry', (1, text, self.page))
+            # elif style == 'Heading2':
+            #     self.notify('TOCEntry', (1, text, self.page))
 
 
 def create_styles():
